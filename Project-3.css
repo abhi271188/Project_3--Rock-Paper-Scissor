@@ -1,0 +1,18 @@
+.container-1
+{
+    border: 1px solid black;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.flex-rps-row-1
+{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    padding: 10px;
+}
+.flex-rps-row-1 img:hover
+{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
