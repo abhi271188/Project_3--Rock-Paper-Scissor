@@ -8,6 +8,7 @@ The project contains three files: rps.css, rps.js, and rps.html
 In this project, there are two players who can play the game at the same time. 
 
 Player_1 - client who wants to play the game
+
 Player_2 - machine itself.
 
 #### Language Used
