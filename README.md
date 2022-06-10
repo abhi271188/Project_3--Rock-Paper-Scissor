@@ -4,7 +4,9 @@ Rock, Paper, and Scissor
 #### Project Description
 A simultaneous, zero-sum game, it has three possible outcomes: a draw, a win or a loss. A player who decides to play rock will beat another player who has chosen scissors, but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied and is usually immediately replayed to break the tie. 
 The project contains three files: rps.css, rps.js, and rps.html
+
 In this project, there are two players who can play the game at the same time. 
+
 Player_1 - client who wants to play the game
 Player_2 - machine itself.
 
