@@ -1,3 +1,5 @@
+//------------------------------------ Defining a driver function -----------------------------------------------------------------------------------
+
 function rpsGame(your_choice)
 {
     let humanChoice = your_choice.id;
@@ -10,10 +12,18 @@ function rpsGame(your_choice)
     console.log('final message: ', message);
     finalrpsGame(humanChoice, botChoice, message);
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------ Defining a function that calculates random values ------------------------------------------------------------
+
 function randomChoice()
 {
     return  ['rock', 'paper', 'scissor'][Math.floor(Math.random() * 3)];
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------ Defining a function that helps matching the pair -------------------------------------------------------------
+
 function findScore(humanChoice, botChoice)
 {
     let rpsDatabase = {
@@ -25,6 +35,10 @@ function findScore(humanChoice, botChoice)
     let botScore = rpsDatabase[botChoice][humanChoice];
     return [yourScore, botScore];
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------ Defining a function that finds the winner --------------------------------------------------------------------
+
 function showWinner([yourScore, botScore])
 {
     if(yourScore == 0)
@@ -40,6 +54,10 @@ function showWinner([yourScore, botScore])
         return {'message' : 'You Drew!', 'color' : 'yellow'};
     }
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------ Defining a function that shows the winner --------------------------------------------------------------------
+
 function finalrpsGame(humanChoice, botChoice, message)
 {
     let rpsimageDatabase = {
@@ -60,3 +78,5 @@ function finalrpsGame(humanChoice, botChoice, message)
     document.querySelector('#rps-row-1').appendChild(textDiv);
     document.querySelector('#rps-row-1').appendChild(botDiv);
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------
